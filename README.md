@@ -1,5 +1,4 @@
 # CitasMedicasFront
-# FrontP2
 # Sistema de Citas Médicas para ECI Salud Vital
 
 ## Arquitectura del Proyecto
