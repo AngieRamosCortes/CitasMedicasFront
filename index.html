@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <title>Clínica ECI Salud Vital</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <h1>Especialidades Médicas</h1>
+  <div id="especialidades" class="grid"></div>
+  <div id="detalle" class="hidden">
+    <h2 id="nombreEspecialidad"></h2>
+    <img id="imagenEspecialidad" />
+    <p id="descripcionEspecialidad"></p>
+    <p><strong>Doctor:</strong> <span id="doctorEspecialidad"></span></p>
+    <p><strong>Ubicación:</strong> <span id="ubicacionEspecialidad"></span></p>
+    <button onclick="mostrarFormulario()">Programar Cita</button>
+  </div>
+  <div id="formularioCita" class="hidden">
+    <h3>Formulario de Cita</h3>
+    <input type="text" id="nombre" placeholder="Nombre completo" />
+    <input type="text" id="cedula" placeholder="Cédula" />
+    <input type="email" id="correo" placeholder="Correo electrónico" />
+    <input type="date" id="fecha" />
+    <button onclick="confirmarCita()">Confirmar Cita</button>
+    <p id="estadoCita"></p>
+  </div>
+  <hr>
+  <div id="historial">
+    <h2>Historial de Citas</h2>
+    <input type="email" id="filtroCorreo" placeholder="Correo para consultar" />
+    <select id="filtroEstado">
+      <option value="">Todos</option>
+      <option value="Confirmada">Confirmada</option>
+      <option value="Cancelada">Cancelada</option>
+    </select>
+    <button onclick="cargarHistorial()">Buscar</button>
+    <div id="listaCitas"></div>
+  </div>
+  <script src="app.js"></script>
+</body>
+</html>

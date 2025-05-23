@@ -1,0 +1,6 @@
+body { font-family: sans-serif; padding: 20px; background: #f9f9f9; }
+.grid { display: grid; grid-template-columns: repeat(2, 1fr); gap: 1em; }
+.grid div { background: #fff; padding: 1em; border: 1px solid #ccc; }
+.hidden { display: none; }
+.confirmada { color: green; }
+.cancelada { color: red; }
